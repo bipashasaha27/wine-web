@@ -50,6 +50,18 @@ body {
     max-width: 1396px !important;
 }
 
+.links-container {
+    max-width: 1913px !important;
+}
+
+.full-container {
+    max-width: 1920px !important;
+}
+
+.contact-container {
+    max-width: 1396px !important;
+}
+
 .container {
     max-width: 1662px;
     margin: 0 auto;
@@ -97,15 +109,25 @@ body {
     color: transparent;
 }
 
+.title-3 {
+    font-family: var(--bold-text);
+    font-size: 24px;
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
 .primary-btn {
     padding: 14.5px 37.5px;
+    margin-top: 32px;
     background: rgba(255, 255, 255, 10%);
     border-radius: 50px;
     backdrop-filter: blur(4px);
     border: 1px var(--primary-color) solid;
     color: var(--primary-color);
     font-family: var(--light-text);
-    font-size: 32px;
+    font-size: 25px;
     display: inline-block;
     overflow: hidden;
 }
@@ -118,6 +140,13 @@ body {
     font-size: 24px;
     font-family: var(--light-text);
     box-shadow: 10px 10px 5px #67615d;
+}
+
+.tirsiary-btn {
+    font-size: 11px;
+    font-family: var(--light-text);
+    color: #FFAB5E;
+    letter-spacing: 2px;
 }
 
 /* hdr-sec */
@@ -298,11 +327,10 @@ nav,
 .banner-right-cntnt {
     display: flex;
     align-items: center;
-    margin-top: 50px;
+    margin: 50px auto;
 }
 
 .bottle-img {
-
     max-width: 319px;
     position: relative;
     z-index: 2;
@@ -377,6 +405,7 @@ nav,
 
 .card-img {
     max-width: 484px;
+    margin: auto;
 }
 
 .card-img>a>img {
@@ -417,6 +446,7 @@ nav,
     background: url('../Assets/addwine.png') no-repeat center/cover;
     max-width: 1920px;
     padding: 200px 0;
+    margin: auto;
 }
 
 .wine-ad-content>p {
@@ -441,18 +471,19 @@ nav,
 
 /* map-sec */
 .map-sec {
-    padding: 100px;
+    padding: 100px 0;
 }
 
 .map-img {
     max-width: 645px;
     position: relative;
+    margin: auto;
 }
 
 .map-img>img {
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: cover;
 }
 
 .toscana-hding {
@@ -525,13 +556,355 @@ nav,
     object-fit: cover;
 }
 
+/* recipes-sec */
+
+.recipes-sec {
+    padding: 111px 0;
+    position: relative;
+    z-index: 10;
+}
+
+.recipie-desin-img {
+    max-width: 600px;
+    position: absolute;
+    top: -100px;
+    left: -43px;
+
+}
+
+
+.recipie-desin-img>img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.recipes-hding>span {
+    font-size: 16px;
+    font-family: var(--heligthon-text);
+    color: var(--primary-color);
+}
+
+.recipes-hding>.title-2 {
+    max-width: 440px;
+    font-size: 36px;
+    margin-top: 21px;
+    margin-bottom: 52px;
+}
+
+.recipes-card {
+    margin: 0 auto;
+}
+
+.recipes-card-img {
+    max-width: 324px;
+    margin-bottom: 31px;
+}
+
+.recipes-card-img>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.recipes-card>span {
+    font-size: 12px;
+    font-family: var(--light-text);
+    color: #FFAB5E;
+    letter-spacing: 3px;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.recipes-card>p {
+    font-size: 11px;
+    font-family: var(--bold-text);
+    color: var(--secondary-color);
+    max-width: 314px;
+    padding: 15px 0;
+}
+
+/* WHISKEYN SELECTION-sec */
+
+.WHISKEYN-SELECTION-sec {
+    padding: 111px 0;
+    background: url('../Assets/Whisky-selection.png') no-repeat center/cover;
+    position: relative;
+    min-height: 80vh;
+}
+
+.WHISKEYN-SELECTION-contnet>.title-3 {
+    font-size: 36px;
+    color: #FFAB5E;
+}
+
+.WHISKEYN-SELECTION-contnet>p {
+    font-size: 15px;
+    color: var(--secondary-color);
+    font-family: var(--light-text);
+    margin-bottom: 26px;
+}
+
+.WHISKEYN-SELECTION-contnet {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+/* wine-card-sec */
+
+.wine-card-sec {
+    padding-top: 30px;
+    padding-bottom: 111px;
+}
+
+.left-card-content>.title-3 {
+    font-size: 36px;
+    color: var(--secondary-color);
+    letter-spacing: 2.5px;
+}
+
+.left-card-content>p {
+    font-size: 15px;
+    color: var(--secondary-color);
+    font-family: var(--light-text);
+    letter-spacing: 2.5px;
+}
+
+.left-card {
+    position: relative;
+}
+
+.left-card-content {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+.card-img {
+    max-width: 984px;
+}
+
+.card-img>img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/*wine-type-sec  */
+
+.wine-type-sec {
+    padding-bottom: 111px;
+    position: relative;
+    overflow: hidden;
+}
+
+.wine-type-img {
+    max-width: 798px;
+}
+
+.wine-type-img>img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.wine-type-sec::before {
+    content: "";
+    position: absolute;
+    z-index: 5;
+    bottom: -150px;
+    left: -150px;
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    filter: blur(250px);
+    opacity: 0.3;
+}
+
+.wine-type-row {
+    align-items: center;
+}
+
+.wine-type-row .col-6 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.winetype-name {
+    display: flex;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.wine-type-icon {
+    max-width: 34px;
+    height: 35px;
+    margin-right: 30px;
+}
+
+.wine-type-content>.title-4 {
+    font-size: 24px;
+    font-family: var(--light-text);
+    color: var(--primary-color);
+    letter-spacing: 2.5px;
+}
+
+.wine-type-content>p {
+    max-width: 438px;
+    font-size: 24px;
+    font-family: var(--bold-text);
+    color: var(--secondary-color);
+    letter-spacing: 1.5px;
+}
+
+/* contact-sec */
+.contact-sec {
+    padding: 111px 0;
+    background: url('../Assets/contact-bg.png') no-repeat center/cover;
+}
+
+.contact-left-content>p {
+    font-size: 13px;
+    font-family: var(--light-text);
+    color: var(--secondary-color);
+    margin-bottom: 22px;
+}
+
+.contact-left-content>.title-3 {
+    max-width: 497px;
+    color: var(--primary-color);
+    margin-bottom: 36px;
+}
+
+.contact-form {
+    max-width: 497px;
+}
+
+.input-field {
+    padding: 14px;
+    color: var(--tertiary-color);
+    width: 100%;
+    margin-bottom: 22px;
+    background: transparent;
+    border: none;
+    border: 1px solid var(--primary-color);
+}
+
+.input-field::placeholder {
+    color: var(--primary-color);
+    font-family: var(--light-text);
+}
+
+
+.contact-btn {
+    padding: 10px 23px;
+    border: 1px solid var(--primary-color);
+    background: none;
+    color: var(--secondary-color);
+    border-radius: 25px;
+}
+
+.contact-btn:hover {
+    background: var(--primary-color);
+}
+
+.contact-row {
+    align-items: center;
+}
+
+.contact-row .col-6 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-map-img {
+    max-width: 536px;
+}
+
+.contact-map-img>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.map-content2 {
+    margin-top: 4px;
+}
+
+.map-content2>p {
+    font-size: 12px;
+    color: var(--secondary-color);
+    font-family: var(--bold-text);
+}
+
+/* footer-sec */
+.footer-sec {
+    padding: 111px 0;
+}
+
+.footer-logo {
+    max-width: 108px;
+    margin: auto;
+}
+
+.footer-logo>a>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.footer-hdr>a {
+    font-size: 24px;
+    font-family: var(--bold-text);
+    color: var(--primary-color);
+    margin-bottom: 29px;
+}
+
+.footer-links {
+    font-size: 16px;
+    font-family: var(--light-text);
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+}
+
+ul li:nth-child(2) .footer-links {
+    font-size: 20px;
+}
+.align-end{
+    text-align: end;
+}
+
+
+
+
 @media screen and (max-width:1200px) {
     .col-4 {
         width: 50%;
     }
+
+    .col-3 {
+        width: 50%;
+    }
+
+    .col-6 {
+        width: 50%;
+    }
+
+    /* recipes-sec */
+    .recipes-card {
+        margin: 35px auto;
+    }
 }
 
 @media screen and (max-width:768px) {
+    .col-3 {
+        width: 100%;
+    }
+
     .col-4 {
         width: 100%;
     }
@@ -539,6 +912,8 @@ nav,
     .col-6 {
         width: 100%;
     }
+
+    /* hdr-sec */
 
     .navbar-links {
         display: none;
@@ -608,20 +983,106 @@ nav,
     }
 
     /* banner-sec */
-    .banner-content>.title-1{
+    .banner-content>.title-1 {
         font-size: 70px;
     }
-    .banner-content>.primary-btn{
+
+    .banner-content>.primary-btn {
         padding: 12px 35px;
         font-size: 15px;
     }
- 
+
     /* showcase-sec */
     .links {
         display: none;
     }
+
     /* map-sec */
-    .map-img{
+    .map-img {
         max-width: 400px;
+    }
+
+    .toscana-hding,
+    .toscana-p {
+        display: none;
+    }
+
+
+    /* recipes-sec */
+    .recipes-sec {
+        padding: 50px 0;
+    }
+
+    .recipes-card {
+        margin: 25px auto;
+    }
+
+    /*  WHISKEYN SELECTION-sec */
+
+    .WHISKEYN-SELECTION-contnet>.title-3 {
+        font-size: 22px;
+    }
+
+    .WHISKEYN-SELECTION-contnet>p {
+        font-size: 12px;
+        letter-spacing: 1.5px;
+    }
+
+    /* wine-card-sec */
+
+    .wine-card-sec {
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
+
+    .left-card-content>.title-3 {
+        font-size: 22px;
+        letter-spacing: 1.5px;
+    }
+
+    /* wine-type-sec */
+    .wine-type-sec {
+        padding: 50px 0;
+    }
+
+    .wine-type-img {
+        max-width: 400px;
+    }
+
+    .wine-type-img>img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    .winetype-body {
+        margin-top: 30px;
+    }
+
+    .wine-type-content>.title-4,
+    .wine-type-content>p {
+        font-size: 15px;
+    }
+
+    /* contact-sec */
+    .contact-right-content {
+        margin-top: 30px;
+    }
+    /* footer-sec */
+    .footer-sec{
+        padding: 50px 0;
+    }
+    .footer-row .col-6{
+        text-align: center;
+    }
+
+    .footer-hdr,
+    .footer-links{
+        text-align: center;
+        font-size: 12px !important;
+    }
+    .align-end{
+        align-items: center;
+        text-align: center;
     }
 }
