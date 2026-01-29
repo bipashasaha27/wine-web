@@ -385,6 +385,8 @@ nav,
 
 .lists {
     display: flex;
+    flex-wrap: wrap;
+    margin-left: 27px;
 }
 
 .lists a {
@@ -400,6 +402,8 @@ nav,
 }
 
 .card {
+    max-width: 484px;
+    margin: 0 auto;
     margin-top: 76px;
 }
 
@@ -593,13 +597,15 @@ nav,
 }
 
 .recipes-card {
+    max-width: 379px;
     margin: 0 auto;
 }
 
-.recipes-card-img {
-    max-width: 324px;
+
+
+/* .recipes-card-img {
     margin-bottom: 31px;
-}
+} */
 
 .recipes-card-img>img {
     width: 100%;
@@ -813,6 +819,7 @@ nav,
 
 .contact-row {
     align-items: center;
+    justify-content: center;
 }
 
 .contact-row .col-6 {
@@ -839,6 +846,7 @@ nav,
     font-size: 12px;
     color: var(--secondary-color);
     font-family: var(--bold-text);
+    margin-top: 15px;
 }
 
 /* footer-sec */
@@ -855,6 +863,7 @@ nav,
     width: 100%;
     height: 100%;
     object-fit: cover;
+    margin-bottom: 20px;
 }
 
 .footer-hdr>a {
@@ -874,7 +883,8 @@ nav,
 ul li:nth-child(2) .footer-links {
     font-size: 20px;
 }
-.align-end{
+
+.align-end {
     text-align: end;
 }
 
@@ -901,9 +911,9 @@ ul li:nth-child(2) .footer-links {
 }
 
 @media screen and (max-width:768px) {
-    .col-3 {
+    /* .col-3 {
         width: 100%;
-    }
+    } */
 
     .col-4 {
         width: 100%;
@@ -984,17 +994,35 @@ ul li:nth-child(2) .footer-links {
 
     /* banner-sec */
     .banner-content>.title-1 {
-        font-size: 70px;
+        font-size: 57px;
+    }
+
+    .banner-content>.title-2 {
+        font-size: 51px;
+    }
+
+    .banner-content>span {
+        font-size: 35px;
+    }
+
+    .banner-content>p {
+        font-size: 50px;
+        margin-top: 5px;
     }
 
     .banner-content>.primary-btn {
         padding: 12px 35px;
         font-size: 15px;
+        margin-top: 15px;
     }
 
     /* showcase-sec */
-    .links {
-        display: none;
+    .showcase-sec {
+        padding: 50px 0;
+    }
+
+    .lists a {
+        font-size: 11px;
     }
 
     /* map-sec */
@@ -1014,7 +1042,13 @@ ul li:nth-child(2) .footer-links {
     }
 
     .recipes-card {
-        margin: 25px auto;
+        max-width: 379px;
+        margin: auto;
+        margin-top: 20px;
+    }
+
+    .recipes-card>span {
+        margin-top: 20px;
     }
 
     /*  WHISKEYN SELECTION-sec */
@@ -1064,25 +1098,48 @@ ul li:nth-child(2) .footer-links {
         font-size: 15px;
     }
 
+
     /* contact-sec */
-    .contact-right-content {
-        margin-top: 30px;
+    .contact-sec {
+        padding: 50px;
     }
+
+    .contact-right-content {
+        max-width: 537px;
+        /* margin-top: 30px; */
+        margin: 30px auto;
+    }
+
+
     /* footer-sec */
-    .footer-sec{
+    .footer-sec {
         padding: 50px 0;
     }
-    .footer-row .col-6{
+
+    .footer-row .col-6 {
         text-align: center;
     }
 
     .footer-hdr,
-    .footer-links{
+    .footer-links {
         text-align: center;
         font-size: 12px !important;
     }
-    .align-end{
+
+    .align-end {
         align-items: center;
         text-align: center;
+    }
+}
+
+@media screen and (max-width:522px) {
+    .col-3 {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .banner-content>.title-1 {
+        font-size: 50px;
     }
 }
