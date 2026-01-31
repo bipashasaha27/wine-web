@@ -24,6 +24,7 @@
     --secondary-color: #ffff;
     --tirtiary-color: #000000;
     --grey-background: #AEAEAE;
+    --grey-bg: #141414;
     --light-text: mont-extralight;
     --bold-text: mont-heavy;
     --heligthon-text: heligthon-signature;
@@ -192,8 +193,23 @@ nav,
     color: #FFAB5E;
 }
 
-.active {
-    text-decoration: underline #FFAB5E;
+.nav-links {
+    position: relative;
+}
+
+.navbar-links .nav-links.active::after {
+    background: var(--primary-color);
+}
+
+
+.nav-links::after {
+    position: absolute;
+    content: "";
+    height: 1.3px;
+    width: 70px;
+    bottom: -6px;
+    left: -1px;
+    transition: 0.3s;
 }
 
 .nav-items {
@@ -770,6 +786,8 @@ nav,
 .contact-sec {
     padding: 111px 0;
     background: url('../Assets/contact-bg.png') no-repeat center/cover;
+    border-bottom: 1px solid;
+    border-image: linear-gradient(to left, var(--primary-color), black) 1;
 }
 
 .contact-left-content>p {
@@ -852,6 +870,8 @@ nav,
 /* footer-sec */
 .footer-sec {
     padding: 111px 0;
+    border-bottom: 1px solid;
+    border-image: linear-gradient(to left, var(--primary-color), var(--secondary-color)) 1;
 }
 
 .footer-logo {
@@ -888,7 +908,38 @@ ul li:nth-child(2) .footer-links {
     text-align: end;
 }
 
+/* footer btm sec */
+.footer-btm-sec {
+    background-color: var(--tirtiary-color);
+    padding-block: 30px;
+    align-items: center;
+    margin: 0 auto;
+}
 
+.footer-btm-sec .row {
+    align-items: center;
+}
+
+
+.left>a,
+.center>a,
+.right {
+    color: var(--secondary-color);
+    font-family: var(--light-text);
+}
+
+.footer-btm-sec .left>a {
+    text-align: left;
+}
+
+.footer-btm-sec .center {
+    text-align: center;
+    /* 🔥 middle text fix */
+}
+
+.footer-btm-sec .right {
+    text-align: right;
+}
 
 
 @media screen and (max-width:1200px) {
@@ -907,6 +958,12 @@ ul li:nth-child(2) .footer-links {
     /* recipes-sec */
     .recipes-card {
         margin: 35px auto;
+    }
+}
+
+@media screen and (max-width:1110px) {
+    .navbar-links {
+        display: none;
     }
 }
 
@@ -1130,6 +1187,25 @@ ul li:nth-child(2) .footer-links {
         align-items: center;
         text-align: center;
     }
+
+    /* footer-btm-sec */
+    .left>a,
+    .center>a,
+    .right {
+        text-align: center !important;
+        font-size: 12px !important;
+    }
+
+    .footer-btm-sec .left>a {
+        display: block;
+        text-align: left;
+    }
+
+    .footer-btm-sec .right {
+        text-align: center;
+        margin-bottom: 16px;
+    }
+
 }
 
 @media screen and (max-width:522px) {
